@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tourist Destinations</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="container mt-5">
+        <h1 class="text-center mb-5 text-primary">Top 8 Tourist Destinations</h1>
+        <!-- Alert -->
+        <div class="alert alert-info alert-dismissible fade show" role="alert">
+            <strong>Welcome!</strong> Explore the top 8 tourist destinations. Click on any destination to learn more.
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+
+        <!-- Row for images and descriptions -->
+        <div class="row g-4">
+            <!-- First Destination -->
+            <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-3">
+                <div class="card h-100 shadow-sm">
+                    <img src="https://hblimg.mmtcdn.com/content/hubble/img/goa/mmt/destination/m_destination-goa-landscape_l_400_640.jpg" height="200px" width="300px" class="card-img-top" alt="Beach">
+                    <div class="card-body">
+                        <h5 class="card-title">Beautiful Beaches</h5>
+                        <p class="card-text text-muted">Relax on pristine beaches with crystal-clear waters.</p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalBeach">
+                            Learn More
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Second Destination -->
+            <div class=" col-lg-3 col-md-4 col-sm-6 col-12 mb-3">
+                <div class="card h-100 shadow-sm">
+                    <img src="https://www.fabhotels.com/blog/wp-content/uploads/2019/07/Things-to-Do-in-Munnar_600.jpg " height="200px" width="300px" class="card-img-top" alt="Mountains">
+                    <div class="card-body">
+                        <h5 class="card-title">Majestic Mountains</h5>
+                        <p class="card-text text-muted">Explore scenic mountain ranges and hiking trails.</p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalMountains">
+                            Learn More
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Third Destination -->
+            <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-3">
+                <div class="card h-100 shadow-sm">
+                    <img src="https://www.atlastravel.in/blog/wp-content/uploads/2024/01/Udaipur-City.jpg " height="200px" width="300px" class="card-img-top" alt="City">
+                    <div class="card-body">
+                        <h5 class="card-title">Vibrant Cities</h5>
+                        <p class="card-text text-muted">Discover bustling cities rich in culture and history.</p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalCity">
+                            Learn More
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Fourth Destination -->
+            <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-3 ">
+                <div class="card h-100 shadow-sm">
+                    <img src="https://cache.getarchive.net/Prod/thumb/cdn12/L3Bob3RvLzIwMTYvMTIvMzEvZm9yZXN0LXRyZWVzLXBsZW50eS1vZi1uYXR1cmFsLWxpZ2h0LW5hdHVyZS1sYW5kc2NhcGVzLTlmNjhjNy0xMDI0LmpwZw%3D%3D/320/240/jpg " height="200px" width="300px
+                            " class="card-img-top" alt="Forest">
+                    <div class="card-body">
+                        <h5 class="card-title">Lush Forests</h5>
+                        <p class="card-text text-muted">Immerse yourself in serene forests and wildlife.</p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalForest">
+                        Learn More
+                    </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Fifth Destination -->
+            <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-3 ">
+                <div class="card h-100 shadow-sm">
+                    <img src="https://holidayadventure.in/wp-content/uploads/2020/11/126619_7ae7282e-1.jpg " height="200px" width="300px" class="card-img-top" alt="Desert">
+                    <div class="card-body">
+                        <h5 class="card-title">Desert Adventures</h5>
+                        <p class="card-text text-muted">Experience the thrill of desert safaris and sand dunes.</p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalDesert">
+                        Learn More
+                    </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Sixth Destination -->
+            <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-3 ">
+                <div class="card h-100 shadow-sm">
+                    <img src="https://www.islands.com/img/gallery/the-most-beautiful-tropical-islands-where-celebrities-vacation/anguilla-caribbean-1716034748.jpg " height="200px" width="300px" class="card-img-top" alt="Island">
+                    <div class="card-body ">
+                        <h5 class="card-title">Tropical Islands</h5>
+                        <p class="card-text text-muted">Enjoy the tranquility of secluded tropical islands.</p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalIsland">
+                            Learn More
+                    </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Seventh Destination -->
+            <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-3 ">
+                <div class="card h-100 shadow-sm">
+                    <img src="https://www.nritravelogue.com/wp-content/uploads/2023/07/historical-places-india.jpg " height="200px " width="300px " class="card-img-top " alt="Historical Site ">
+                    <div class="card-body">
+                        <h5 class="card-title">Historical Landmarks</h5>
+                        <p class="card-text text-muted">Visit ancient landmarks and learn about their rich history.</p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalLandmarks">
+                        Learn More
+                    </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Eighth Destination -->
+            <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-3">
+                <div class="card h-100 shadow-sm">
+                    <img src="https://media.istockphoto.com/id/496033591/photo/upper-catabwa-falls.jpg?s=612x612&w=0&k=20&c=KhXl99TTH-bF2Mae0T6uaGPbMmKA5TW0XmN7z74nBko=" height=" 200px" width="300px" class="card-img-top" alt="Waterfall">
+                    <div class="card-body">
+                        <h5 class="card-title">Majestic Waterfalls</h5>
+                        <p class="card-text text-muted">Marvel at the beauty of stunning waterfalls.</p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalWaterfall">
+                        Learn More
+                    </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for Beach -->
+    <div class="modal fade" id="modalBeach" tabindex="-1" aria-labelledby="modalBeachLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalBeachLabel">Beautiful Beaches</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Discover breathtaking beaches with white sands, clear blue waters, and endless sunshine. Perfect for a relaxing vacation.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for Mountains -->
+    <div class="modal fade" id="modalMountains" tabindex="-1" aria-labelledby="modalMountainsLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalMountainsLabel">Majestic Mountains</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Experience the awe-inspiring beauty of towering mountains, with hiking trails that lead to panoramic vistas.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for City -->
+    <div class="modal fade" id="modalCity" tabindex="-1" aria-labelledby="modalCityLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalCityLabel">Vibrant Cities</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Explore modern cities filled with vibrant culture, exciting nightlife, and historic landmarks.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for Forest -->
+    <div class="modal fade" id="modalForest" tabindex="-1" aria-labelledby="modalForestLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalForestLabel">Lush Forests</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Immerse yourself in the tranquility of lush forests teeming with diverse wildlife and beautiful landscapes.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for Desert -->
+    <div class="modal fade" id="modalDesert" tabindex="-1" aria-labelledby="modalDesertLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalDesertLabel">Desert Adventures</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Feel the thrill of desert safaris, camel rides, and the vast expanse of golden sand dunes.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for Island -->
+    <div class="modal fade" id="modalIsland" tabindex="-1" aria-labelledby="modalIslandLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalIslandLabel">Tropical Islands</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Escape to peaceful islands with crystal-clear waters, swaying palm trees, and a relaxed island vibe.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for Landmarks -->
+    <div class="modal fade" id="modalLandmarks" tabindex="-1" aria-labelledby="modalLandmarksLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalLandmarksLabel">Historical Landmarks</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Discover iconic historical landmarks that tell the stories of civilizations and events from the past.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for Waterfall -->
+    <div class="modal fade" id="modalWaterfall" tabindex="-1" aria-labelledby="modalWaterfallLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalWaterfallLabel">Majestic Waterfalls</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Witness the sheer power and beauty of magnificent waterfalls as they cascade into serene pools below.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Bootstrap JS (optional) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js "></script>
+</body>
+
+</html>
